@@ -1,0 +1,220 @@
+/* Api call Page Styling */
+.api_Warper {
+    width: 1200px;
+    max-width: 100%;
+
+    height: max-content;
+
+    margin: 50px auto;
+    position: relative;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+.Loading {
+    width: 100%;
+    text-align: center;
+
+    padding: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid grey;
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 10px auto;
+
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*-------------------------------------------------------------------------
+-------------------Api call Page Styling Ends Here-------------------------
+--------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------
+----------------------------Form Styling-----------------------------------
+--------------------------------------------------------------------------*/
+
+.formWrapper {
+    width: 600px;
+    max-width: 100%;
+
+    height: max-content;
+    margin: 50px auto 0 auto;
+
+    padding: 40px;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+}
+
+.formWrapper input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #aaaaaa;
+    margin: 0px 0px 20px 0px;
+
+    cursor: pointer;
+}
+
+.formWrapper input:hover {
+    background-color: hsl(0, 0%, 97%);
+    font-weight: 600;
+    border: 1px solid #aaaaaa;
+    outline: none;
+}
+
+.formWrapper input:active {
+    border: 1px solid #aaaaaa;
+    outline: none;
+}
+
+.formWrapper input:focus {
+    border: 1px solid #aaaaaa;
+    outline: none;
+
+    background-color: hsl(0, 0%, 97%);
+    font-weight: 600;
+}
+
+.formWrapper button {
+    width: 120px;
+    border-radius: 5px;
+    font-size: 16px;
+
+    background-color: hsl(158, 95%, 34%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.formWrapper button:hover {
+    background-color: hsl(158, 95%, 38%);
+}
+
+.formWrapper span {
+    width: 120px;
+    border-radius: 5px;
+    font-size: 16px;
+
+    background-color: hsl(158, 95%, 34%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formWrapper span:hover {
+    background-color: hsl(158, 95%, 38%);
+}
+
+.multistep {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    display: none;
+}
+
+.active {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.formWrapper h1 {
+    margin: 0 0 20px 0 !important;
+    font-weight: 600;
+
+    opacity: 0.8;
+}
+
+.steps {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    opacity: 0.7;
+}
+
+.city_Pincode {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city_Pincode input {
+    width: 48%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.Form_table {
+    width: 1200px;
+    margin: 50px auto;
+    max-width: 100%;
+}
+
+/*-------------------------------------------------------------------------
+------------------------Form Styling Ends Here-----------------------------
+--------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------------
+---------------------------------E-Com Styling-----------------------------
+-------------------------------------------------------------------------*/
