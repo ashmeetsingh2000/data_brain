@@ -35,7 +35,7 @@ function Apicall() {
                         API_Data.map((items) => {
                             return (
                                 <tr>
-                                    <td><img src={items.image} /></td>
+                                    <td><img src={items.image} alt="" /></td>
                                     <td>{items.title}</td>
                                     <td>{items.description}</td>
                                     <td>${items.price}</td>

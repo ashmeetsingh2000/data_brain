@@ -24,7 +24,7 @@ function Form() {
     const showData = (e) => {
 
         // upload Data
-        if (Fname == '') {
+        if (Fname === '') {
             setdataArr(arr => [...arr, { "fname": FullName, "email": Email, "number": Phn, "address": Address, "city": City, "pincode": Pincode, "Uname": Uname, "password": Password }]);
         } else {
             alert("form empty")
@@ -61,7 +61,7 @@ function Form() {
     // Text validattion
     function validateText(id) {
         let inputField = document.getElementById(id);
-        inputField.value == '' ?
+        inputField.value === '' ?
             inputField.classList.remove("greenBorder") :
             inputField.classList.add("greenBorder")
     }
@@ -72,7 +72,7 @@ function Form() {
         let num_input_value = num_input.value;
         console.log(num_input_value.toString().length)
 
-        if (num_input_value.toString().length == 10) {
+        if (num_input_value.toString().length === 10) {
             num_input.classList.remove("redBorder");
             num_input.classList.add("greenBorder")
         }
