@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import navstyle from './navbar.module.css'
+import React from 'react'
 
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
-        <div className={navstyle.Navigation_bar}>
-            <div className={navstyle.link_Container}>
-                <NavLink exact to="/apicall" className={({ isActive }) => isActive ? navstyle.active : navstyle.notactive}>
+        <div className="Navigation_bar">
+            <div className="link_Container">
+                <NavLink exact to="/data_brain/apicall" className={({ isActive }) => isActive ? "navactive" : "notactive"}>
                     Api Call
                 </NavLink>
-                <NavLink exact to="/" className={({ isActive }) => isActive ? navstyle.active : navstyle.notactive}>
+                <NavLink exact to="/data_brain/" className={({ isActive }) => isActive ? "navactive" : "notactive"}>
                     Form
                 </NavLink>
-                <NavLink exact to="/e-com" className={({ isActive }) => isActive ? navstyle.active : navstyle.notactive}>
+                <NavLink exact to="/data_brain/e-com" className={({ isActive }) => isActive ? "navactive" : "notactive"}>
                     E-Commerce
                 </NavLink>
             </div>

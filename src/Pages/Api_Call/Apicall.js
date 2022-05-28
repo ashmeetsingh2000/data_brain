@@ -21,32 +21,36 @@ function Apicall() {
     return (
         <div className="api_Warper">
             <table>
-                <tr>
-                    <th>Image</th>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Rating</th>
-                </tr>
-                {API_Data.length > 0 ?
-                    API_Data.map((items) => {
-                        return (
-                            <tr>
-                                <td><img src={items.image} /></td>
-                                <td>{items.title}</td>
-                                <td>{items.description}</td>
-                                <td>${items.price}</td>
-                                <td>{items.rating.rate}/5</td>
-                            </tr>
-                        )
-                    })
-                    :
-                    <div className="Loading">
-                        <div className="loader"></div>
-                        Loading
-                    </div>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {API_Data.length > 0 ?
+                        API_Data.map((items) => {
+                            return (
+                                <tr>
+                                    <td><img src={items.image} /></td>
+                                    <td>{items.title}</td>
+                                    <td>{items.description}</td>
+                                    <td>${items.price}</td>
+                                    <td>{items.rating.rate}/5</td>
+                                </tr>
+                            )
+                        })
+                        :
+                        <div className="Loading">
+                            <div className="loader"></div>
+                            Loading
+                        </div>
 
-                }
+                    }
+                </tbody>
             </table>
         </div>
     )

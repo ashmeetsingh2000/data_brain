@@ -16,9 +16,9 @@ function App() {
 			<Navbar />
 
 			<Routes>
-				<Route exact path='/apicall' element={<Apicall />} />
-				<Route exact path="/e-com" element={<Ecom />} />
-				<Route exact path="/" element={<Form />} />
+				<Route exact path='/data_brain/apicall' element={<Apicall />} />
+				<Route exact path="/data_brain/e-com" element={<Ecom />} />
+				<Route exact path="/data_brain/" element={<Form />} />
 			</Routes>
 
 		</>
